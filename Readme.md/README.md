@@ -41,10 +41,6 @@ This project analyzes Target’s e-commerce data using SQL to uncover trends rel
 - Conditional logic (CASE WHEN)
 - Pivot tables
 
-## ▶ How to Run
-1. Load the dataset into BigQuery
-2. Navigate to the `sql/` folder
-3. Execute queries in each `.sql` file sequentially
 
 ## 📌 Notes
 - Geolocation table contains duplicate zip code entries; results are aggregated accordingly
