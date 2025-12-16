@@ -1,12 +1,18 @@
-# Target SQL Business Case Analysis
+# 🎯 Target E-Commerce SQL Business Case Analysis
 
 ## 📌 Project Overview
-This project analyzes Target’s e-commerce data using SQL to uncover trends related to customer behavior, order growth, payments, freight, and delivery performance.
+This project analyzes Target’s e-commerce data using SQL to uncover insights related to
+customer behavior, order growth, logistics performance, and payment patterns.
+The objective is to answer real-world business questions and provide actionable
+recommendations based on data.
+
+---
 
 ## 🗂 Dataset
-- Source: Target e-commerce business case dataset
-- Database: BigQuery
-- Tables used:
+- **Source:** Target e-commerce business case dataset
+- **Database:** Google BigQuery
+- **Time Period:** Multi-year historical order data
+- **Tables Used:**
   - customers
   - orders
   - order_items
@@ -14,38 +20,50 @@ This project analyzes Target’s e-commerce data using SQL to uncover trends rel
   - sellers
   - geolocation
 
+---
+
 ## 🛠 Tools & Technologies
 - SQL (BigQuery)
 - Git & GitHub
 
+---
+
 ## 📊 Business Questions Answered
-- What is the time range of orders in the dataset?
-- Is there a growing trend in the number of orders over the years?
-- Are there seasonal patterns in monthly order volume?
-- Which states generate higher order value and freight cost?
-- How does actual delivery time compare with estimated delivery time?
-- What payment methods are most commonly used?
+- What is the overall time range of orders in the dataset?
+- How has the number of orders changed over the years?
+- Are there seasonal trends in monthly order volume?
+- Which states generate the highest order value and freight cost?
+- How does actual delivery time compare to estimated delivery time?
+- What payment methods are most frequently used by customers?
+
+---
 
 ## 📈 Key Insights
-- Order volume shows a consistent growth trend over the years
-- Clear monthly seasonality is observed in customer purchases
-- Certain states contribute disproportionately to revenue and freight cost
-- Orders are often delivered earlier than the estimated delivery date
-- Credit card payments dominate over other payment types
+- Order volume demonstrates a **consistent upward growth trend** over the years
+- **Strong monthly seasonality** is observed in customer purchasing behavior
+- A small number of states contribute **disproportionately to total revenue and freight costs**
+- Most orders are delivered **earlier than the estimated delivery date**
+- **Credit cards** are the dominant payment method across transactions
+
+---
 
 ## 🧠 SQL Concepts Used
-- Joins
+- Joins (INNER, LEFT)
 - Common Table Expressions (CTEs)
-- Aggregations
+- Aggregations & Grouping
 - Date & Time functions
-- Conditional logic (CASE WHEN)
-- Pivot tables
+- Conditional logic using `CASE WHEN`
+- Pivot-style analysis
 
-## ▶ How to Run
-1. Load the dataset into BigQuery
-2. Navigate to the `sql/` folder
-3. Execute queries in each `.sql` file sequentially
+---
+
+## 💡 Business Recommendations
+- Improve logistics operations in states with recurring delivery delays
+- Focus marketing and retention strategies on high-revenue states
+- Optimize freight costs by reviewing seller distribution in high-cost regions
+
+---
 
 ## 📌 Notes
-- Geolocation table contains duplicate zip code entries; results are aggregated accordingly
-- This project focuses on analytical SQL rather than data modeling
+- The geolocation table contains duplicate zip code entries; data was aggregated accordingly
+- This project focuses on **analytical SQL** rather than data modeling or ETL pipelines
